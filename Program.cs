@@ -1,19 +1,22 @@
 ﻿using System;
 
-namespace Сумма_первых_n_членов_прогрессии
+namespace Посчитать_количество_и_сумму_парных_чисел_от_1_до_N_
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int n = Convert.ToInt32(Console.Read());
-            int start = 10;
-            int shag = 5;
-            int sum = start;
-            for (int i = 1; i < n; ++i)
+            int k = 0;
+            int a = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i < a+1; i++)
             {
-                sum += start + (n) * shag;
+                int s = i;
+                if (s % 2 ==0)
+                {
+                    k += 1;
+                }
             }
+            Console.Write(k);
         }
     }
 }
