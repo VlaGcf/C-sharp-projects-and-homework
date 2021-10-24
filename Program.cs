@@ -1,18 +1,17 @@
 ﻿using System;
 
-namespace Вывести_на_экран_прямоугольный_треугольник
+namespace Вывести_таблицы_умножения_от_второй_до_шестой
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int m = Convert.ToInt32(Console.ReadLine());
-            int i = 0; 
-            int j=0;
-            for (i = 0; i <m+1; i++)
+            int i = 0;
+            int j = 0;
+            for (i = 2; i < 7; i++)
             {
-                for (j = 0; j < i; j++)
-                    Console.Write("*");
+                for (j = 2; j<7; j++)
+                    Console.Write(i*j);
                 Console.WriteLine();
             }
 
