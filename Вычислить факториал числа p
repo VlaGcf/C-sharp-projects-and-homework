@@ -1,0 +1,21 @@
+using System;
+
+namespace Вычислить_факториал_числа_p
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int s = 1;
+            int k = 1;
+            int p=Convert.ToInt32(Console.ReadLine());
+                do
+                {
+                    s = s * k;
+                    k ++;
+                } while (k!=p+1);
+                Console.WriteLine(s);
+            
+        }
+    }
+}
