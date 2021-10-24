@@ -1,21 +1,22 @@
 ﻿using System;
 
-namespace Вычислить_факториал_числа_p
+namespace Посчитать_количество_и_сумму_парных_чисел_от_1_до_N_
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int s = 1;
-            int k = 1;
-            int p=Convert.ToInt32(Console.ReadLine());
-                do
+            int k = 0;
+            int a = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i < a+1; i++)
+            {
+                int s = i;
+                if (s % 2 ==0)
                 {
-                    s = s * k;
-                    k ++;
-                } while (k!=p+1);
-                Console.WriteLine(s);
-            
+                    k += 1;
+                }
+            }
+            Console.Write(k);
         }
     }
 }
