@@ -1,0 +1,31 @@
+using System;
+
+namespace Палиндром
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+            int b = Convert.ToInt32(a.Length);
+            int m = 1;
+            for (int i = 1; i < b; i++)
+            {
+                if (a[i] == a[b - 1 - i])
+                {
+                    m = 0;
+                }
+                else
+                {
+                    Console.Write("Число - не палиндром");
+                    m = 1;
+                    break;
+                }
+            }
+            if (m == 0)
+            {
+                Console.Write("Число - палиндром");
+            }
+        }
+    }
+}
