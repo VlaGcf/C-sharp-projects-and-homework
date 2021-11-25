@@ -1,0 +1,21 @@
+using System;
+
+namespace Реверс
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+            string d = a;
+            int b = Convert.ToInt32(a.Length);
+            int m = 1;
+            var charArray = a.ToCharArray();
+            Array.Reverse(charArray);
+            var reversed = new string(charArray);
+            Console.Write(charArray);
+            
+        }
+    }
+}
