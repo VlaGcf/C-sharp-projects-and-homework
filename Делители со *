@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int n=Convert.ToInt32(Console.ReadLine());
+		for (int a=1;a<=n; a++){
+			int b=1;
+			int t=1;
+			while (b!=a){
+			if (a%b==0){
+			t++;}
+				b++;
+			}
+			string k=new string('*', t);
+			Console.WriteLine(a+k);}
+	}
+}
