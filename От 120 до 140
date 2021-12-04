@@ -1,0 +1,17 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		for (int a=120;a<=140; a++){
+			int b=1;
+			int t=1;
+			while (b!=a){
+			if (a%b==0){
+			t++;}
+				b++;
+			}
+			Console.WriteLine("У числа"+' '+a+' '+t+" делителей"); }
+	}
+}
