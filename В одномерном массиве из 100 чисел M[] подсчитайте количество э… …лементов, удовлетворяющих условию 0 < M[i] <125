@@ -1,0 +1,24 @@
+using System;
+
+namespace Массив
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            int[] myArray = new int[100];
+            Random rand = new Random();
+            int k = 0;
+            for (int x = 0; x < myArray.Length; x++)
+            {
+                myArray[x] = rand.Next(100);
+
+            }
+            for (int i = 0; i < myArray.Length; i++) {
+                if (0 < myArray[i] && myArray[i] < 125) {
+                    k += 1;
+                }; }
+            Console.WriteLine(k);
+        }
+    }
+}
